@@ -1,5 +1,12 @@
 Reproduction for https://github.com/vuetifyjs/vuetify/issues/17419.
 
+Steps to see error;
+
+1. Clone repo
+2. `pnpm install`
+3. `pnpm dev`
+4. See errors in console
+
 Steps followed to create this reproduction;
 
 1. `yarn create vuetify`
