@@ -1,44 +1,29 @@
-# default
+Reproduction for https://github.com/vuetifyjs/vuetify/issues/17419.
 
-## Project setup
+Steps followed for fresh project;
 
-```
-# yarn
-yarn
+1. `yarn create vuetify`
 
-# npm
-npm install
+- Basic w/ Typescript using pnpm
 
-# pnpm
-pnpm install
-```
+2. Update dependencies
 
-### Compiles and hot-reloads for development
+- `"vue": "^3.3.4"`
+- `"vuetify": "^3.3.0"`
 
-```
-# yarn
-yarn dev
+3. Update `vite.config.js`
 
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
+```ts
+styles: { configFile: "src/styles/settings.scss" },
 ```
 
-### Compiles and minifies for production
+4. Create `src/styles/settings.scss`
 
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
+```scss
+@use "vuetify/settings" with (
+  $input-font-size: 14px,
+  $input-details-letter-spacing: normal
+);
 ```
 
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
+5. `pnpm dev`
