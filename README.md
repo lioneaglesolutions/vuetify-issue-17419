@@ -1,6 +1,6 @@
 Reproduction for https://github.com/vuetifyjs/vuetify/issues/17419.
 
-Steps followed for fresh project;
+Steps followed to create this reproduction;
 
 1. `yarn create vuetify`
 
