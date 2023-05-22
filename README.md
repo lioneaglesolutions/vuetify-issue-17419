@@ -27,3 +27,16 @@ styles: { configFile: "src/styles/settings.scss" },
 ```
 
 5. `pnpm dev`
+
+Console output contains several errors complaining about VInput variables;
+
+````
+  Error: This variable was not declared with !default in the @used module.
+    ╷
+  2 │   $input-font-size: 14px,
+    │   ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    src/styles/settings.scss 2:3                                 @use
+    plugin-vuetify:components/VResponsive/VResponsive.sass 1:1  root stylesheet
+    ```
+````
